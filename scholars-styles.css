@@ -1,0 +1,277 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url(fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #452264;
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.1px;
+}
+
+section {
+    display: flex;
+    width: 100%;
+}
+
+.requirements-section-left, .details-section-right {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+}
+
+.requirements-text-container {
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+h2 {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin: 0 0 1rem 0;
+}
+
+.requirements-title {
+    margin-bottom: 1rem;
+}
+
+.requirements-list {
+    margin: 0 0 1rem 2rem;
+    color: #FFFFFF;
+}
+
+.requirements-deadline {
+    font-weight: 700;
+    text-decoration-line: underline;
+    color: #52B788;
+}
+
+.checklist-image-container {
+    width: 50%;
+    height: 25rem;
+    background-image: url(/images/requirements-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.details-image-container {
+    width: 50%;
+    height: 37rem;
+    background-image: url(/images/details_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.details-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 0 0 1rem 2rem;
+}
+
+.details-section-list li {
+    margin: 0 6rem 1rem 2rem;
+    color: #FFFFFF;
+}
+
+.details-section-list .list-header {
+    font-weight: bold;
+    list-style-type: none;
+    margin-left: 0;
+    color: #52B788;
+}
+
+.apply-section-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background: url(/images/apply-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4rem 0;
+}
+
+.apply-title {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.apply-instructions-container {
+    width: 40%;
+}
+
+.apply-section-list {
+    margin: 1rem 0rem 1rem 2rem;
+    color: #FFFFFF;
+}
+
+a {
+    color: #52B788;
+    text-decoration: none;
+}
+
+.instructions-conclusion-container {
+    width: 35%;
+    margin: 0 0 2rem 0;
+}
+
+.instructions-conclusion {
+    color: #FFFFFF;
+}
+
+.video-container {
+    margin: 0 0 4rem 0;
+    width: 800px;
+    height: 450px;
+}
+
+.apply-today-title {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.apply-button {
+    letter-spacing: 0.2px;
+    background-color: #52B788;
+    border-radius: .5rem;
+    border: none;
+    width: 168px;
+    height: 48px;
+    margin-bottom: 4rem;
+}
+
+.apply-button a {
+    color: #FFFFFF;
+}
+
+/* mobile */
+@media screen and (min-width: 360px) and (max-width: 767px) {
+    .requirements-text-container {
+        margin: 0 2rem;
+    }
+
+    .details-text-container {
+        margin: 0 2rem;
+    }
+
+    .requirements-section-left {
+        width: 100%;
+        height: 25rem;
+        background-image: url(/images/requirements-background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .checklist-image-container {
+        display: none;
+    }
+
+    .requirements-deadline {
+        text-align: center;
+    }
+
+    .details-section-right {
+        width: 100%;
+        height: auto;
+        background-image: url(/images/details_background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 4rem 0;
+    }
+
+    .details-section-list li {
+        margin: 0 0 0 2rem;
+    }
+
+    .details-image-container {
+        display: none;
+    }
+
+    h2, .requirements-title, .details-title {
+        text-align: center;
+    }
+
+    .instructions-conclusion {
+        margin: 0 2rem;
+        text-align: center;
+    }
+
+    .apply-instructions-container {
+        width: 100%;
+    }
+
+    .instructions-conclusion-container {
+        width: 100%;
+    }
+
+    .apply-section-list {
+        margin: 0 2rem 1rem 4rem;
+    }
+
+    .video-container {
+        margin: 0 0 4rem 0;
+        width: 100%;
+    }
+}
+
+/* small-screen laptop computers */
+@media screen and (min-width: 768px) and (max-width: 1023px)  {
+    .requirements-text-container {
+        margin-left: 0 4rem;
+    }
+
+    .details-section-right {
+        padding: 2rem 0;
+    }
+
+    .details-image-container {
+        height: auto;
+    }
+
+    .details-text-container {
+        margin: 0 0 0 2rem;
+    }
+
+    .details-section-list li {
+        margin-right: 4rem;
+    }
+
+    .apply-instructions-container {
+        width: 60%;
+    }
+
+    .instructions-conclusion-container {
+        width: 60%;
+    }
+}
+
+/* desktop computers */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .details-section-right {
+        padding: 2rem 0;
+    }
+
+    .details-image-container {
+        height: auto;
+    }
+}
