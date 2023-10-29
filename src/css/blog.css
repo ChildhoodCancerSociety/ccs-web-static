@@ -358,43 +358,6 @@
     max-width: 31.25rem;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode .recent-articles .blog-h1,
-  body.dark-mode .recent-articles .blog-desc,
-  body.dark-mode .recent-articles .blog-author,
-  body.dark-mode .recent-articles .blog-date {
-    color: #f7f7f7;
-  }
-  body.dark-mode .blog-sidebar .feature-h3,
-  body.dark-mode .blog-sidebar .feature-date,
-  body.dark-mode .blog-sidebar .blog-header {
-    color: #f7f7f7;
-  }
-  body.dark-mode .blog-sidebar .blog-header:after {
-    background: var(--primary);
-  }
-  body.dark-mode .blog-article .blog-h1,
-  body.dark-mode .blog-article .blog-author,
-  body.dark-mode .blog-article .blog-date {
-    color: #f7f7f7;
-  }
-  body.dark-mode .blog-article #blog-content h2,
-  body.dark-mode .blog-article #blog-content h3,
-  body.dark-mode .blog-article #blog-content h4,
-  body.dark-mode .blog-article #blog-content h5,
-  body.dark-mode .blog-article #blog-content h6 {
-    color: #f7f7f7;
-  }
-  body.dark-mode .blog-article #blog-content p,
-  body.dark-mode .blog-article #blog-content li {
-    color: #f7f7f7;
-    opacity: .8;
-  }
-  body.dark-mode .blog-article #blog-content a {
-    color: #9dafe5;
-  }
-}
 /*-- -------------------------- -->
 <---          Sidebar           -->
 <--- -------------------------- -*/
