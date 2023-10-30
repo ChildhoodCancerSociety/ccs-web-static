@@ -212,10 +212,6 @@
             }
 
             .light {
-                display: none;
-            }
-
-            .dark {
                 display: block;
             }
         }
@@ -433,10 +429,6 @@
 
             .logo {
                 .light {
-                    display: none;
-                }
-
-                .dark {
                     display: block;
                 }
             }
@@ -449,23 +441,6 @@
                         }
                     }
                 }
-            }
-        }
-
-        #dark-mode-toggle {
-            svg {
-                path {
-                    fill: #000;
-                }
-            }
-        }
-    }
-
-    body.dark-mode {
-        #navigation {
-            .background-color-div {
-                height: 100%;
-                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             }
         }
     }
@@ -597,100 +572,6 @@
 }
 
 // ---------------------------------------------------------
-
-/* Dark Mode Mobile */
-@media only screen and (max-width: 1023px) {
-    body.dark-mode {
-        #navigation {
-            .background-color-div {
-                background-color: var(--dark);
-            }
-
-            .hamburger-menu {
-                &.clicked {
-                    span {
-                        background-color: var(--dark);
-                    }
-                }
-                span {
-                    background-color: #fff;
-
-                    &:before, &:after {
-                        background-color: #fff;
-                    }
-                }
-            }
-
-            .logo {
-                .light {
-                    display: block;
-                }
-
-                .dark {
-                    display: none !important;
-                }
-            }
-
-            #navbar-menu {
-                background-color: var(--medium);
-
-                ul {
-                    li {
-                        a {
-                            color: #fff;
-                            &:before {
-                                background: var(--accent);
-                            }
-
-                            &.active {
-                                color: var(--primary);
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-/* Dark Mode Desktop */
-@media only screen and (min-width: 1024px) {
-    body.dark-mode {
-        #navigation {
-            .background-color-div {
-                background-color: var(--dark);
-            }
-
-            .logo {
-                .light {
-                    display: block;
-                }
-
-                .dark {
-                    display: none !important;
-                }
-            }
-
-            #navbar-menu {
-                ul {
-                    li {
-                        a {
-                            color: #fff;
-                            &:before {
-                                background: var(--accent);
-                            }
-
-                            &.active {
-                                color: var(--primary);
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        
-    }
-}
 
 /*-- -------------------------- -->
 <---   Interior Page Header     -->
@@ -1034,14 +915,5 @@
 				display: inline-block;
 			}
 		}
-    }
-}
-
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-    body.dark-mode {
-        #footer {
-            background: #061623;
-        }
     }
 }
