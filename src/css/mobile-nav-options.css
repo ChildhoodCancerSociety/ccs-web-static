@@ -30,9 +30,6 @@
     width: auto;
     height: 100%;
   }
-  #navigation .logo .light {
-    display: none;
-  }
   #navigation .hamburger-menu {
     position: absolute;
     right: 0em;
