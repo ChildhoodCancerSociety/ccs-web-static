@@ -190,9 +190,6 @@
   #navigation .logo .light {
     display: none;
   }
-  #navigation .logo .dark {
-    display: block;
-  }
   #navigation .hamburger-menu {
     position: absolute;
     right: 0rem;
@@ -362,18 +359,8 @@
   body.scroll #navigation .logo .light {
     display: none;
   }
-  body.scroll #navigation .logo .dark {
-    display: block;
-  }
   body.scroll #navigation #navbar-menu ul li a {
     color: #1a1a1a;
-  }
-  body.scroll #dark-mode-toggle svg path {
-    fill: #000;
-  }
-  body.dark-mode #navigation .background-color-div {
-    height: 100%;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
   #navigation {
     width: 100%;
@@ -466,61 +453,6 @@
   }
   #navigation .hamburger-menu {
     display: none;
-  }
-}
-/* Dark Mode Mobile */
-@media only screen and (max-width: 1023px) {
-  body.dark-mode #navigation .background-color-div {
-    background-color: var(--dark);
-  }
-  body.dark-mode #navigation .hamburger-menu.clicked span {
-    background-color: var(--dark);
-  }
-  body.dark-mode #navigation .hamburger-menu span {
-    background-color: #fff;
-  }
-  body.dark-mode #navigation .hamburger-menu span:before,
-  body.dark-mode #navigation .hamburger-menu span:after {
-    background-color: #fff;
-  }
-  body.dark-mode #navigation .logo .light {
-    display: block;
-  }
-  body.dark-mode #navigation .logo .dark {
-    display: none !important;
-  }
-  body.dark-mode #navigation #navbar-menu {
-    background-color: var(--medium);
-  }
-  body.dark-mode #navigation #navbar-menu ul li a {
-    color: #fff;
-  }
-  body.dark-mode #navigation #navbar-menu ul li a:before {
-    background: var(--accent);
-  }
-  body.dark-mode #navigation #navbar-menu ul li a.active {
-    color: var(--primary);
-  }
-}
-/* Dark Mode Desktop */
-@media only screen and (min-width: 1024px) {
-  body.dark-mode #navigation .background-color-div {
-    background-color: var(--dark);
-  }
-  body.dark-mode #navigation .logo .light {
-    display: block;
-  }
-  body.dark-mode #navigation .logo .dark {
-    display: none !important;
-  }
-  body.dark-mode #navigation #navbar-menu ul li a {
-    color: #fff;
-  }
-  body.dark-mode #navigation #navbar-menu ul li a:before {
-    background: var(--accent);
-  }
-  body.dark-mode #navigation #navbar-menu ul li a.active {
-    color: var(--primary);
   }
 }
 /*-- -------------------------- -->
@@ -812,11 +744,5 @@
   }
   #footer .credit .copyright {
     display: inline-block;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #footer {
-    background: #061623;
   }
 }
