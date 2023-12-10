@@ -35,7 +35,6 @@ Some of those additional features include:
 - **Eleventy Navigation** - This simplifies the way you do navigations to just 3 lines within the frontmatter of your HTML. All the rest has been done for you.
 - **Centralised Data** - To make it quicker and easier to get started and scale your project, there is a folder containing key information about the client. Should you then later want to change a phone number, address or name, it's all contained in one place.
 - **Netlify CMS** - This starter kit comes with a blog, powered by Netlify CMS. All the config is done for you.
-- **Dark Mode** - With dark mode catching on nowadays, having it on your websites is a nice extra touch you can add. This kit gives you an easy way to add dark styles. What's better, is the users system preferences are taken on first visit, so those who have opted-in to dark mode have that served to them on their first visit.
 
 If any of the above doesn't make sense, don't worry! It is all explained in the [Get Started]() section. But first, it's best to get acquinted with the structure of the project...
 
