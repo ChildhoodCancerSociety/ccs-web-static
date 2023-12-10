@@ -1,3 +1,26 @@
+@import url('./about.css');
+@import url('./blog.css');
+@import url('./contact.css');
+@import url('./critical.css');
+@import url('./local.css');
+@import url('./mobile-nav-options.css');
+@import url('./projects.css');
+@import url('./reviews.css');
+
+:root {
+  --ccs-color-primary-base: #7C6492;
+  --ccs-color-primary-darker: #452264;
+  --ccs-color-primary-lighter: #C7BCD0;
+  --ccs-color-secondary-base: #6FCA72;
+  --ccs-color-secondary-darker: #4A984E;
+  --ccs-color-secondary-lighter: #B0EDB3;
+
+  --ccs-color-neutral-black: #25282B;
+  --ccs-color-neutral-dark-gray: #52575C;
+  --ccs-color-neutral-light-gray: #F9F9FA;
+  --ccs-color-neutral-white: #FFFFFF;
+}
+
 /*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
@@ -545,7 +568,7 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   #footer {
-    background: #1C1C1C;
+    background: var(--ccs-color-primary-darker);
     padding: 5.25rem 0 1.25rem;
     font-size: min(4vw, 1.2em);
   }
@@ -620,7 +643,7 @@
     transition: color .3s;
   }
   #footer .right-section .lists ul li a:hover {
-    color: var(--primary);
+    color: var(--ccs-color-secondary-base);
   }
   #footer .right-section .lists ul h2 {
     color: #fff;
@@ -637,7 +660,7 @@
     display: block;
     height: 0.125rem;
     width: 6.0625rem;
-    background: var(--primary);
+    background: var(--ccs-color-secondary-base);
     opacity: 1;
     bottom: -1rem;
     left: 0;
@@ -662,7 +685,7 @@
     font-size: 1rem;
   }
   #footer .credit a {
-    color: var(--primary);
+    color: var(--ccs-color-secondary-base);
     text-decoration: none;
     font-size: 1rem;
   }
@@ -729,7 +752,7 @@
     display: block;
     height: 0.125rem;
     width: 0%;
-    background: var(--primary);
+    background: var(--ccs-color-secondary-base);
     opacity: 1;
     bottom: -0.1875rem;
     left: 0;
