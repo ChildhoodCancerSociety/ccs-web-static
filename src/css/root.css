@@ -557,14 +557,13 @@
   #footer .left-section .logo {
     display: inline-block;
     margin: auto;
-    width: auto;
-    height: 3.125em;
     margin-bottom: 1.875em;
     text-align: center;
   }
   #footer .left-section .logo img {
     width: auto;
-    height: 100%;
+    border-radius: 0.5rem;
+    height: 10rem;
     display: block;
   }
   #footer .left-section p {
