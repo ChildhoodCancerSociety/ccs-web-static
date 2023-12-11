@@ -385,7 +385,7 @@
     display: none;
   }
   body.scroll #navigation #navbar-menu ul li a {
-    color: #1a1a1a;
+    color: var(--ccs-color-secondary-base);
   }
   #navigation {
     width: 100%;
@@ -403,7 +403,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--ccs-color-primary-darker);
     height: 0;
     transition: height .3s;
   }
