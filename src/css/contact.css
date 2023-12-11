@@ -1,3 +1,19 @@
+@import url('./root.css');
+
+:root {
+  --ccs-color-primary-base: #7C6492;
+  --ccs-color-primary-darker: #452264;
+  --ccs-color-primary-lighter: #C7BCD0;
+  --ccs-color-secondary-base: #6FCA72;
+  --ccs-color-secondary-darker: #4A984E;
+  --ccs-color-secondary-lighter: #B0EDB3;
+
+  --ccs-color-neutral-black: #25282B;
+  --ccs-color-neutral-dark-gray: #52575C;
+  --ccs-color-neutral-light-gray: #F9F9FA;
+  --ccs-color-neutral-white: #FFFFFF;
+}
+
 /*-- -------------------------- -->
 <---          Contact           -->
 <--- -------------------------- -*/
@@ -32,7 +48,7 @@
     text-align: left;
     letter-spacing: .1em;
     font-weight: 700;
-    color: var(--primary);
+    color: var(--ccs-color-secondary-base);
     /* 8px - 12px */
     margin-bottom: clamp(0.5rem, 1.4vw, 0.75rem);
     display: block;
@@ -90,10 +106,11 @@
     /* prevents border & padding from affecting height */
     box-sizing: border-box;
     transition: border .3s;
+    max-width: 100%;
   }
   #cs-contact #cs-form input:hover,
   #cs-contact #cs-form textarea:hover {
-    border: 1px solid var(--primary);
+    border: 1px solid var(--ccs-color-secondary-base);
   }
   #cs-contact #cs-form textarea {
     font-family: inherit;
@@ -113,7 +130,7 @@
     color: #1a1a1a;
     min-width: 9.375rem;
     padding: 0 1.5rem;
-    background-color: var(--primary);
+    background-color: var(--ccs-color-secondary-base);
     border: none;
     border-radius: 0.25rem;
     display: inline-block;
@@ -127,7 +144,7 @@
     position: absolute;
     height: 100%;
     width: 0%;
-    background: #000;
+    background: var(--ccs-color-secondary-darker);
     opacity: 1;
     top: 0;
     left: 0;
@@ -153,8 +170,8 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
   }
   #cs-contact .cs-header {
     /* 16px - 20px */
@@ -268,6 +285,11 @@
     max-width: 33.875rem;
     /* prevents flexbox from squishing it */
     flex: none;
+  }
+  #cs-contact .cs-right-section {
+    display: flex;
+    align-items: start;
+    justify-content: end;
   }
   #cs-contact .cs-right-section:hover .cs-bg-picture {
     transform: scale(1.1);
