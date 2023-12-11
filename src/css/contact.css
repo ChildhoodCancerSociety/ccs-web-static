@@ -106,6 +106,8 @@
     /* prevents border & padding from affecting height */
     box-sizing: border-box;
     transition: border .3s;
+    border: solid 3px gold;
+    max-width: 100%;
   }
   #cs-contact #cs-form input:hover,
   #cs-contact #cs-form textarea:hover {
