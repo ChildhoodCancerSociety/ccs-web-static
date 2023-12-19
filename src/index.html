@@ -20,13 +20,18 @@ eleventyNavigation:
 <section id="hero">
   <div class="cs-container">
     <div class="cs-flex-group">
-      <span class="cs-topper">mountain hiking society</span>
-      <h1 class="cs-title">Explore the World with Exciting People</h1>
+      <span class="cs-topper">Volunteer-run 501(c)(3) non-profit</span>
+      <h1 class="cs-title">Childhood Cancer Society</h1>
+    <div class="container">
+        <!--Logo - Get SVGs if you can.  I use fiverr to get png's turned into SVGs. Highly recommend it, worth the $20 - get a light and dark version-->
+        <a class="logo" aria-label="click to go to home page" href="/">
+
+            <!--Dark Colored Logo-->
+            <img class="dark" aria-hidden="true" src="/assets/images/logo.png" decoding="async" loading="lazy" alt="logo" width="223" height="254">
+        </a>
+      </div>
       <p class="cs-text">
-        Discover a world where elegance meets efficiency in every design. Our
-        skilled team excels in bringing visions to life with precision and
-        flair. Each detail is meticulously crafted, ensuring a harmonious blend
-        of style and practicality.
+        Dedicated to helping families who are struggling with childhood cancer.
       </p>
       <a href="" class="cs-button-solid">Explore More</a>
       <a href="" class="cs-button-transparent">
@@ -38,15 +43,24 @@ eleventyNavigation:
           alt="play icon"
           width="17"
           height="17"
-        />
-        Learn More
+/>
+        Donate
       </a>
     </div>
   </div>
 
   <!-- Background Image -->
-  {% image './src/images/landing.jpg', 'mountains', 'cs-picture', 'eager',
-  '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+  <picture class="cs-picture">
+      <source type="image/webp" srcset="/images/landing-200w.webp 200w, /images/landing-400w.webp 400w, /images/landing-850w.webp 850w, /images/landing-1920w.webp 1920w, /images/landing-2500w.webp 2500w" sizes="(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px">
+  <source type="image/jpeg" srcset="/images/landing-200w.jpeg 200w, /images/landing-400w.jpeg 400w, /images/landing-850w.jpeg 850w, /images/landing-1920w.jpeg 1920w, /images/landing-2500w.jpeg 2500w" sizes="(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px">
+      <img
+        src="/images/landing-200w.jpeg"
+        width="2500"
+        height="1666"
+        alt="mountains"
+        loading="eager"
+        decoding="async">
+    </picture> 
 </section>
 
 <!-- ============================================ -->
@@ -54,7 +68,7 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="services" class="services">
-  <!-- Get Icons From favicon.com -->
+  <!-- Get Icons From flaticon.com -->
   <div class="card">
     <picture>
       <img
@@ -64,13 +78,10 @@ eleventyNavigation:
         alt="appliance"
         width="48"
         height="48"
-      />
+/>
     </picture>
     <h2>Service 1</h2>
-    <p>
-      Talk about the service with keywords people will be searching for it by.
-      Keep it 1-2 sentences.
-    </p>
+    <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
   </div>
   <div class="card">
     <picture>
@@ -81,13 +92,10 @@ eleventyNavigation:
         alt="appliance"
         width="48"
         height="48"
-      />
+/>
     </picture>
     <h2>Service 2</h2>
-    <p>
-      Talk about the service with keywords people will be searching for it by.
-      Keep it 1-2 sentences.
-    </p>
+    <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
   </div>
   <div class="card">
     <picture>
@@ -98,13 +106,10 @@ eleventyNavigation:
         alt="appliance"
         width="48"
         height="48"
-      />
+/>
     </picture>
     <h2>Service 3</h2>
-    <p>
-      Talk about the service with keywords people will be searching for it by.
-      Keep it 1-2 sentences.
-    </p>
+    <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
   </div>
 </section>
 
@@ -116,37 +121,45 @@ eleventyNavigation:
   <div class="cs-container">
     <!-- Left Image Section -->
     <div class="cs-left">
-      {% image './src/images/cabinets2.jpg', 'house', 'cs-picture cs-picture1',
-      'lazy'%} {% image './src/images/construction.jpg', 'house', 'cs-picture
-      cs-picture2', 'lazy'%}
+      <picture class="cs-picture cs-picture1">
+      <source type="image/webp" srcset="/images/cabinets2-200w.webp 200w, /images/cabinets2-400w.webp 400w" sizes="(max-width: 600px) 400px, 850px">
+  <source type="image/jpeg" srcset="/images/cabinets2-200w.jpeg 200w, /images/cabinets2-400w.jpeg 400w" sizes="(max-width: 600px) 400px, 850px">
+      <img
+        src="/images/cabinets2-200w.jpeg"
+        width="400"
+        height="476"
+        alt="house"
+        loading="lazy"
+        decoding="async">
+    </picture>
+      <picture class="cs-picture cs-picture2">
+      <source type="image/webp" srcset="/images/construction-200w.webp 200w, /images/construction-400w.webp 400w" sizes="(max-width: 600px) 400px, 850px">
+  <source type="image/jpeg" srcset="/images/construction-200w.jpeg 200w, /images/construction-400w.jpeg 400w" sizes="(max-width: 600px) 400px, 850px">
+      <img
+        src="/images/construction-200w.jpeg"
+        width="400"
+        height="563"
+        alt="house"
+        loading="lazy"
+        decoding="async">
+    </picture>
     </div>
     <!-- Right Content Section-->
     <div class="cs-right">
       <span class="cs-topper">About Us</span>
-      <h2 class="cs-title">About Company Title</h2>
+      <h2 class="cs-title">Childhood Cancer Society</h2>
       <p class="cs-text">
-        In our pursuit of excellence, we embrace innovation and craftsmanship.
-        Our dedicated team works tirelessly to ensure every project exceeds
-        expectations, blending creativity with practicality. Join us in a
-        journey where each design is a masterpiece, crafted with passion and
-        precision.
+        Childhood Cancer Society (CCS) is a volunteer-run 501(c)(3) non-profit dedicated to helping families who are struggling with childhood cancer. From financial support to providing gifts/wish grants, our efforts support these families to maintain a mindset conducive to healing.
       </p>
       <p class="cs-text">
-        In our pursuit of excellence, we embrace innovation and craftsmanship.
-        Our dedicated team works tirelessly to ensure every project exceeds
-        expectations, blending creativity with practicality. Join us in a
-        journey where each design is a masterpiece, crafted with passion and
-        precision.
+        We continue to help spread awareness and ultimately fulfill our mission through multiple initiatives: our TeddyGram Program, Adventure Ted Chats, Adventure Ted Chronicles, endless volunteering opportunities, and more!
       </p>
       <div class="cs-flex-group">
         <p class="cs-flex-p">
-          In our creative process, we focus on harmonizing form and function.
-          Every step is taken with careful thought to ensure exceptional
-          results. Embrace a blend of innovative design and practicality that
-          truly stands out.
+          My life’s work is to touch the lives of as many people as possible and to show those who are struggling that some things cannot be quantified—the power of hope is one of those things.
         </p>
-        <span class="cs-name">Justin Time</span>
-        <span class="cs-job">CEO-Founder</span>
+        <span class="cs-name">Tommy Head</span>
+        <span class="cs-job">Founder / CEO</span>
         <img
           class="cs-quote-icon"
           loading="lazy"
@@ -155,7 +168,7 @@ eleventyNavigation:
           alt="gavel"
           width="136"
           height="77"
-        />
+/>
       </div>
       <a href="/about" class="button-solid">More About Us</a>
     </div>
@@ -163,172 +176,239 @@ eleventyNavigation:
 </section>
 
 <!-- ============================================ -->
-<!--            Extra Content To Rank             -->
+<!--                Adventure Ted                 -->
 <!-- ============================================ -->
 
 <section id="sbs-r">
   <div class="cs-container">
     <!-- Left Image Section -->
     <div class="cs-left">
-      {% image './src/images/construction.jpg', 'house', 'cs-picture
-      cs-picture1', 'lazy'%} {% image './src/images/cabinets2.jpg', 'house',
-      'cs-picture cs-picture2', 'lazy'%}
+      <picture class="cs-picture cs-picture1">
+      <source type="image/webp" srcset="/images/construction-200w.webp 200w, /images/construction-400w.webp 400w" sizes="(max-width: 600px) 400px, 850px">
+  <source type="image/jpeg" srcset="/images/construction-200w.jpeg 200w, /images/construction-400w.jpeg 400w" sizes="(max-width: 600px) 400px, 850px">
+      <img
+        src="/images/construction-200w.jpeg"
+        width="400"
+        height="563"
+        alt="house"
+        loading="lazy"
+        decoding="async">
+    </picture>
+      <picture class="cs-picture cs-picture2">
+      <source type="image/webp" srcset="/images/cabinets2-200w.webp 200w, /images/cabinets2-400w.webp 400w" sizes="(max-width: 600px) 400px, 850px">
+  <source type="image/jpeg" srcset="/images/cabinets2-200w.jpeg 200w, /images/cabinets2-400w.jpeg 400w" sizes="(max-width: 600px) 400px, 850px">
+      <img
+        src="/images/cabinets2-200w.jpeg"
+        width="400"
+        height="476"
+        alt="house"
+        loading="lazy"
+        decoding="async">
+    </picture>
     </div>
     <!-- Right Content Section-->
     <div class="cs-right">
-      <span class="cs-topper">SEO Ranking</span>
-      <h2 class="cs-title">Talk about a main service keyword</h2>
+      <span class="cs-topper">Our Mascot</span>
+      <h2 class="cs-title">Adventure Ted</h2>
       <p class="cs-text">
-        In our pursuit of excellence, we embrace innovation and craftsmanship.
-        Our dedicated team works tirelessly to ensure every project exceeds
-        expectations, blending creativity with practicality. Join us in a
-        journey where each design is a masterpiece, crafted with passion and
-        precision.
+        Centered around the children’s book hero, Adventure Ted is "a brand of positivity created to help people overcome challenges.” Our content &amp; social mission focuses on helping people to feel inspired and maintain an optimal mindset.
       </p>
       <p class="cs-text">
-        Embrace a world of innovation and excellence with us. Our dedication to
-        quality is unwavering, ensuring that every project we undertake is a
-        testament to our commitment. Our team skillfully navigates challenges,
-        delivering exceptional results that exceed expectations. Driven by
-        passion and precision, we craft experiences that are not only visually
-        stunning but also functionally superior. In every endeavor, we strive to
-        set new standards, combining creativity with practical solutions that
-        resonate with our clients. Experience the fusion of artistry and
-        efficiency in our work, where every detail is a step towards perfection.
+        Adventure Ted is the official "spokes-bear" of the Childhood Cancer Society. He raises awareness and funds for the organization’s initiatives. All purchases made in our store are donated directly to CCS . Thank you for your help and support!
       </p>
-      <a href="" class="button-solid">Learn More About Thing</a>
+      <a href="https://linktr.ee/adventureted.official" class="button-solid">Explore Adventure Ted</a>
     </div>
   </div>
 </section>
 
 <!-- ============================================ -->
-<!--                   Gallery                    -->
+<!--                 How We Help                  -->
 <!-- ============================================ -->
 
-<section id="gallery">
+<section id="sbs">
   <div class="cs-container">
-    <span class="cs-topper">Our Portfolio</span>
-    <h2 class="cs-title">Et orci volutpat, back up generator installations</h2>
-    <div class="cs-image-group">
-      <!-- Row 1-->
-      <div class="cs-row cs-row-1">
-        {% image './src/images/portfolio/port1.jpg', 'new hallway', 'cs-picture
-        cs-picture-1', 'lazy', '(max-width: 600px) 200px, 400px'%} {% image
-        './src/images/portfolio/port4.jpg', 'new home construction', 'cs-picture
-        cs-picture-2', 'lazy', '(max-width: 600px) 200px, 400px'%} {% image
-        './src/images/portfolio/port7.jpg', 'building a new wall', 'cs-picture
-        cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-      </div>
-      <!-- Row 2 -->
-      <div class="cs-row cs-row-2">
-        {% image './src/images/portfolio/port2.jpg', 'new kitchen', 'cs-picture
-        cs-picture-1', 'lazy', '(max-width: 600px) 200px, 400px'%} {% image
-        './src/images/portfolio/port5.jpg', 'apartment addition', 'cs-picture
-        cs-picture-2', 'lazy', '(max-width: 600px) 200px, 400px'%} {% image
-        './src/images/portfolio/port8.jpg', 'kew kitchen cabinets', 'cs-picture
-        cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
-        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-      </div>
-      <!-- Row 3 -->
-      <div class="cs-row cs-row-3">
-        {% image './src/images/portfolio/port3.jpg', 'new kitchen', 'cs-picture
-        cs-picture-1', 'lazy', '(max-width: 600px) 200px, 400px'%} {% image
-        './src/images/portfolio/port6.jpg', 'apartment addition', 'cs-picture
-        cs-picture-2', 'lazy', '(max-width: 600px) 200px, 400px'%} {% image
-        './src/images/portfolio/port9.jpg', 'kew kitchen cabinets', 'cs-picture
-        cs-picture-3', 'lazy', '(max-width: 600px) 200px, 400px'%}
-
-        <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-      </div>
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      <picture class="cs-picture cs-picture1">
+      <source type="image/webp" srcset="/images/cabinets2-200w.webp 200w, /images/cabinets2-400w.webp 400w" sizes="(max-width: 600px) 400px, 850px">
+  <source type="image/jpeg" srcset="/images/cabinets2-200w.jpeg 200w, /images/cabinets2-400w.jpeg 400w" sizes="(max-width: 600px) 400px, 850px">
+      <img
+        src="/images/cabinets2-200w.jpeg"
+        width="400"
+        height="476"
+        alt="house"
+        loading="lazy"
+        decoding="async">
+    </picture>
+      <picture class="cs-picture cs-picture2">
+      <source type="image/webp" srcset="/images/construction-200w.webp 200w, /images/construction-400w.webp 400w" sizes="(max-width: 600px) 400px, 850px">
+  <source type="image/jpeg" srcset="/images/construction-200w.jpeg 200w, /images/construction-400w.jpeg 400w" sizes="(max-width: 600px) 400px, 850px">
+      <img
+        src="/images/construction-200w.jpeg"
+        width="400"
+        height="563"
+        alt="house"
+        loading="lazy"
+        decoding="async">
+    </picture>
     </div>
-    <a href="/projects" class="button-solid">View Full Gallery</a>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <span class="cs-topper">Wish Grants, Initiatives &amp; More</span>
+      <h2 class="cs-title">How We Help</h2>
+      <p class="cs-text">
+        In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis
+        libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei
+        aptent taciti sociosqu ad litora torquent per.
+      </p>
+      <p class="cs-text">
+        In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis
+        libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei
+        aptent taciti sociosqu ad litora torquent per.
+      </p>
+      <a href="/about" class="button-solid">More About Us</a>
+    </div>
   </div>
 </section>
 
 <!-- ============================================ -->
-<!--                   Reviews                    -->
+<!--                     ATC                      -->
 <!-- ============================================ -->
 
-<section id="reviews">
+<section id="sbs-r">
   <div class="cs-container">
-    <span class="cs-topper">Our Reviews</span>
-    <h2 class="cs-title">Words From Our Customers</h2>
-    <p class="cs-text">
-      Embark on a journey of creative brilliance and meticulous craftsmanship
-      with us. Our team's expertise lies in transforming visions into reality
-      with unparalleled dedication. Each project is a symphony of innovative
-      design and refined aesthetics, where every detail is carefully sculpted to
-      perfection. Join us in redefining excellence, where imagination meets
-      precision in every creation.
-    </p>
-    <ul class="cs-card-group">
-      <!-- Review 1 -->
-      <li class="cs-item">
-        <img
-          class="cs-item-img"
-          aria-hidden="true"
-          loading="lazy"
-          decoding="async"
-          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
-          alt="profile picture"
-          width="80"
-          height="80"
-        />
-        <p class="cs-item-p">
-          Experience the fusion of tradition and innovation in our approach. Our dedication to excellence is evident in every endeavor, as we blend timeless techniques with modern sophistication. Each design is a testament to our commitment to quality, crafted with meticulous attention to detail and an unwavering focus on delivering exceptional results. Embrace a world where every creation is not just a product but a work of art, reflecting our passion for excellence.
-        </p>
-        <span class="cs-reviewer">
-          Jon Doe
-          <span class="cs-desc">Homeowner</span>
-        </span>
-        <img
-          class="cs-item-stars"
-          aria-hidden="true"
-          loading="lazy"
-          decoding="async"
-          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-          alt="stars"
-          width="96"
-          height="16"
-        />
-      </li>
-      <!-- Review 2 -->
-      <li class="cs-item">
-        <img
-          class="cs-item-img"
-          aria-hidden="true"
-          loading="lazy"
-          decoding="async"
-          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
-          alt="profile picture"
-          width="80"
-          height="80"
-        />
-        <p class="cs-item-p">
-          Experience the fusion of tradition and innovation in our approach. Our dedication to excellence is evident in every endeavor, as we blend timeless techniques with modern sophistication. Each design is a testament to our commitment to quality, crafted with meticulous attention to detail and an unwavering focus on delivering exceptional results. Embrace a world where every creation is not just a product but a work of art, reflecting our passion for excellence.
-        </p>
-        <span class="cs-reviewer">
-          Jane Doe
-          <span class="cs-desc">Homeowner</span>
-        </span>
-        <img
-          class="cs-item-stars"
-          aria-hidden="true"
-          loading="lazy"
-          decoding="async"
-          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-          alt="stars"
-          width="96"
-          height="16"
-        />
-      </li>
-    </ul>
-    <a aria-label="read more reviews" href="/reviews" class="button-solid"
-      >Read More</a
-    >
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      <picture class="cs-picture cs-picture1">
+      <source type="image/webp" srcset="/images/construction-200w.webp 200w, /images/construction-400w.webp 400w" sizes="(max-width: 600px) 400px, 850px">
+  <source type="image/jpeg" srcset="/images/construction-200w.jpeg 200w, /images/construction-400w.jpeg 400w" sizes="(max-width: 600px) 400px, 850px">
+      <img
+        src="/images/construction-200w.jpeg"
+        width="400"
+        height="563"
+        alt="house"
+        loading="lazy"
+        decoding="async">
+    </picture>
+      <picture class="cs-picture cs-picture2">
+      <source type="image/webp" srcset="/images/cabinets2-200w.webp 200w, /images/cabinets2-400w.webp 400w" sizes="(max-width: 600px) 400px, 850px">
+  <source type="image/jpeg" srcset="/images/cabinets2-200w.jpeg 200w, /images/cabinets2-400w.jpeg 400w" sizes="(max-width: 600px) 400px, 850px">
+      <img
+        src="/images/cabinets2-200w.jpeg"
+        width="400"
+        height="476"
+        alt="house"
+        loading="lazy"
+        decoding="async">
+    </picture>
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <span class="cs-topper">Learn, Grow, Make a Difference</span>
+      <h2 class="cs-title">Volunteer Opportunities</h2>
+      <p class="cs-text">
+        Our range of internships, including roles in AI for Social Good, Animation, Communications, Graphic Design, Video Production, and Web Development, provides a platform for passionate individuals to harness their talents in a cause that truly matters.
+      </p>
+      <p class="cs-text">
+        Whether you're animating heartwarming stories, developing compelling communication strategies, or crafting engaging websites, your contribution will be a beacon of hope in the lives of those affected by childhood cancer.
+      </p>
+      <a href="" class="button-solid">Learn More</a>
+    </div>
   </div>
 </section>
+
+<!-- ============================================ -->
+<!--                 Theme Park E                 -->
+<!-- ============================================ -->
+
+<section id="sbs">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      <picture class="cs-picture cs-picture1">
+      <source type="image/webp" srcset="/images/cabinets2-200w.webp 200w, /images/cabinets2-400w.webp 400w" sizes="(max-width: 600px) 400px, 850px">
+  <source type="image/jpeg" srcset="/images/cabinets2-200w.jpeg 200w, /images/cabinets2-400w.jpeg 400w" sizes="(max-width: 600px) 400px, 850px">
+      <img
+        src="/images/cabinets2-200w.jpeg"
+        width="400"
+        height="476"
+        alt="house"
+        loading="lazy"
+        decoding="async">
+    </picture>
+      <picture class="cs-picture cs-picture2">
+      <source type="image/webp" srcset="/images/construction-200w.webp 200w, /images/construction-400w.webp 400w" sizes="(max-width: 600px) 400px, 850px">
+  <source type="image/jpeg" srcset="/images/construction-200w.jpeg 200w, /images/construction-400w.jpeg 400w" sizes="(max-width: 600px) 400px, 850px">
+      <img
+        src="/images/construction-200w.jpeg"
+        width="400"
+        height="563"
+        alt="house"
+        loading="lazy"
+        decoding="async">
+    </picture>
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <span class="cs-topper">Original Podcast Series</span>
+      <h2 class="cs-title">Adventure Ted Chats</h2>
+      <p class="cs-text">
+        Adventure Ted Chats is a guest speaker series that invites prominent individuals to share challenges/pivotal moments in their lives, the wisdom they’ve gained through those experiences, and how those challenges/moments brought them to what they’re doing today.
+      </p>
+      <p class="cs-text">
+        Whether the challenges discussed pertain to childhood cancer, or the long journey to a dream career, each episode consists of an authentic conversation between a featured speaker and the Founder/CEO of Childhood Cancer Society, Tommy Head.
+      </p>
+      <a href="/about" class="button-solid">More About Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                     ATC                      -->
+<!-- ============================================ -->
+
+<section id="sbs-r">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      <picture class="cs-picture cs-picture1">
+      <source type="image/webp" srcset="/images/construction-200w.webp 200w, /images/construction-400w.webp 400w" sizes="(max-width: 600px) 400px, 850px">
+  <source type="image/jpeg" srcset="/images/construction-200w.jpeg 200w, /images/construction-400w.jpeg 400w" sizes="(max-width: 600px) 400px, 850px">
+      <img
+        src="/images/construction-200w.jpeg"
+        width="400"
+        height="563"
+        alt="house"
+        loading="lazy"
+        decoding="async">
+    </picture>
+      <picture class="cs-picture cs-picture2">
+      <source type="image/webp" srcset="/images/cabinets2-200w.webp 200w, /images/cabinets2-400w.webp 400w" sizes="(max-width: 600px) 400px, 850px">
+  <source type="image/jpeg" srcset="/images/cabinets2-200w.jpeg 200w, /images/cabinets2-400w.jpeg 400w" sizes="(max-width: 600px) 400px, 850px">
+      <img
+        src="/images/cabinets2-200w.jpeg"
+        width="400"
+        height="476"
+        alt="house"
+        loading="lazy"
+        decoding="async">
+    </picture>
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <span class="cs-topper">Unlock Exclusive Discounts</span>
+      <h2 class="cs-title">TeddyGram Program</h2>
+      <p class="cs-text">
+        The TeddyGram Program offers exclusive discounts on our favorite stores and experiences, as well as the latest updates here at Childhood Cancer Society.
+      </p>
+      <p class="cs-text">
+        Adventure Ted, our superhero teddy bear mascot, will continually contact brands and stores to get the best deals imaginable. Stay tuned for updates on our "The Adventurers" Patreon, as new coupon codes will be uploaded as they become available.
+      </p>
+      <a href="" class="button-solid">View on YouTube</a>
+    </div>
+  </div>
+</section>
+
 <!-- ============================================ -->
 <!--             Final Call to Action             -->
 <!-- ============================================ -->
@@ -336,28 +416,41 @@ eleventyNavigation:
 <section id="cta">
   <div class="container">
     <h2 class="title">
-      Get It Done <br />
+      Get It Done <br/>
       With Us Today
     </h2>
     <p>
-      Say something catchy, informative, and encouraging to click the button to
-      go to the contact page. I like to add these to the bottom of all pages.
+      Say something catchy, informative, and encouraging to click the button to go to the contact page. I like to add
+      these to the bottom of all pages.
     </p>
     <a href="/contact" class="button-solid">Get an Estimate Now</a>
   </div>
-  {% image './src/images/cabinets2.jpg', 'kitchen cabinets', '', 'lazy',
-  '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+  <picture class="">
+      <source type="image/webp" srcset="/images/cabinets2-200w.webp 200w, /images/cabinets2-400w.webp 400w" sizes="(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px">
+  <source type="image/jpeg" srcset="/images/cabinets2-200w.jpeg 200w, /images/cabinets2-400w.jpeg 400w" sizes="(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px">
+      <img
+        src="/images/cabinets2-200w.jpeg"
+        width="400"
+        height="476"
+        alt="kitchen cabinets"
+        loading="lazy"
+        decoding="async">
+    </picture>
 </section>
 
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
   if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", (user) => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
+    window
+      .netlifyIdentity
+      .on('init', (user) => {
+        if (!user) {
+          window
+            .netlifyIdentity
+            .on('login', () => {
+              document.location.href = '/admin/';
+            });
+        }
+      });
   }
 </script>
