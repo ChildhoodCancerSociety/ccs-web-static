@@ -1,9 +1,9 @@
 ---
 layout: "base.html"
-description: "Meta description for the page"
-metaTitle: "Title that shows up on google searches"
+description: "Discover the inspiring journey of the Childhood Cancer Society (CCS) and how we empower families touched by pediatric cancer."
+metaTitle: "About Childhood Cancer Society - Our Story of Hope and Support"
 tagTitle: "About"
-preloadImg: "/images/cabinets2-1920w.webp"
+preloadImg: "./src/assets/images/about-us/cropped-dis-logo3.png"
 preloadCSS: "/css/about.css"
 permalink: "about/"
 eleventyNavigation:
@@ -11,16 +11,14 @@ eleventyNavigation:
   order: 200
 ---
 
-<!-- Enter html code below -->
-
 <!-- ============================================ -->
 <!--                    LANDING                   -->
 <!-- ============================================ -->
 
 <section id="int-hero">
-  <h1 id="home-h">About Us</h1>
-  {% image './src/images/cabinets2.jpg', 'cabinets', '', 'lazy', '(max-width:
-  850px) 850px, 1920px'%}
+  <h1 id="home-h">Welcome to Childhood Cancer Society</h1>
+  {% image './src/assets/images/about-us/cropped-dis-logo3.png', 'Childhood
+  Cancer Society Banner', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
 </section>
 
 <!-- ============================================ -->
@@ -31,48 +29,60 @@ eleventyNavigation:
   <div class="cs-container">
     <!-- Left Image Section -->
     <div class="cs-left">
-      {% image './src/images/cabinets2.jpg', 'cabinets', 'cs-picture
-      cs-picture1', 'lazy'%} {% image './src/images/construction.jpg', 'house',
-      'cs-picture cs-picture2', 'lazy'%}
+      {% image './src/assets/images/about-us/cropped-dis-logo3.png', 'Tommy
+      Acting', 'cs-picture cs-picture1', 'lazy'%}
     </div>
     <!-- Right Content Section-->
     <div class="cs-right">
-      <span class="cs-topper">About Us</span>
-      <h2 class="cs-title">About Company Title</h2>
+      <span class="cs-topper">Our Journey</span>
+      <h2 class="cs-title">The Story of Childhood Cancer Society</h2>
       <p class="cs-text">
-        Discover our journey of dedication and excellence in craftsmanship. Our
-        team's passion for quality is evident in every project we undertake.
-        From intricate design to flawless execution, our commitment to
-        perfection is unwavering. Join us as we continue to innovate and excel
-        in our field.
+        Welcome to the Childhood Cancer Society (CCS), a sanctuary of hope and a
+        testament to the power of family support during challenging times. Our
+        journey began through the eyes of a compassionate 7-year-old, Tommy
+        Head, who understood deeply the significance of familial comfort while
+        undergoing evaluations for childhood leukemia. This profound experience
+        catalyzed the creation of CCS, a 501(c)(3) non-profit organization
+        dedicated to empowering families touched by pediatric cancer.
       </p>
       <p class="cs-text">
-        Embracing modern techniques and timeless styles, we create spaces that
-        reflect your unique personality. Our attention to detail ensures each
-        element is tailored to your needs. Experience the blend of functionality
-        and elegance with our bespoke solutions. Let us transform your vision
-        into reality.
+        Tommy’s personal health challenges led to a period of restricted
+        physical activity, during which he discovered a passion for acting. His
+        talents shone through in numerous commercials, print advertisements, and
+        television roles, including appearances on ABC’s “One Life to Live,”
+        culminating in his induction into the Screen Actors Guild (SAG). At the
+        tender age of 12, Tommy channeled his earnings from acting into a
+        heartfelt donation of video game consoles to the hospital that supported
+        him, sparking joy and respite for many young patients.
       </p>
-      <div class="cs-flex-group">
-        <p class="cs-flex-p">
-          Our philosophy centers on harmonizing design with practicality. Every
-          creation is a testament to our commitment to excellence, crafted with
-          the utmost care and precision. Embrace the art of fine design with us,
-          where every detail is a journey of discovery.
-        </p>
-        <span class="cs-name">Justin Time</span>
-        <span class="cs-job">CEO-Founder</span>
-        <img
-          class="cs-quote-icon"
-          loading="lazy"
-          decoding="async"
-          src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-          alt="gavel"
-          width="136"
-          height="77"
-        />
-      </div>
-      <a href="" class="button-solid">More About Us</a>
+      <p class="cs-text">
+        Emboldened by his full recovery at age 15 and a renewed zest for life,
+        Tommy transformed his gratitude into action by founding CCS. Our
+        organization is volunteer-driven, channeling generosity and support to
+        provide financial assistance and emotional encouragement to families
+        navigating the journey of pediatric cancer.
+      </p>
+      <p class="cs-text">
+        In 2019, CCS introduced a beacon of courage and joy: Adventure Ted. As
+        the superhero and official spokes-bear of our society, Adventure Ted
+        embodies the resilience and compassion at the heart of our mission. He
+        inspires both the young and the young-at-heart to rise above adversities
+        and extend a helping hand to others in their own quests.
+      </p>
+      <p class="cs-text">
+        We extend an open invitation to any family seeking support to complete
+        our Adventurer Application. For those wishing to join hands with our
+        cause, The Adventurer Patreon welcomes you. This platform not only
+        offers exclusive discounts at beloved stores but also serves as a hub
+        for exclusive content and community initiatives, all contributing to the
+        betterment of courageous children and their families.
+      </p>
+      <p class="cs-text">
+        Embark on a journey with us as we create a legacy of hope and discovery,
+        transforming the fight against pediatric cancer into a shared adventure
+        of courage and community.
+      </p>
+      <a href="about/" class="button-solid">More About CCS</a>
     </div>
   </div>
 </section>
@@ -84,15 +94,18 @@ eleventyNavigation:
 <section id="cta">
   <div class="container">
     <h2 class="title">
-      Get It Done <br />
-      With Us Today
+      Join Us in the Fight <br />
+      Against Pediatric Cancer
     </h2>
     <p>
-      Say something catchy, informative, and encouraging to click the button to
-      go to the contact page. I like to add these to the bottom of all pages.
+      Your support can make a significant difference in the lives of children
+      battling cancer. Become a part of our journey to provide hope and
+      assistance to affected families.
     </p>
-    <a href="/contact.html" class="button-solid">Free Estimate</a>
+    <a href="/donate.html" class="button-solid">Support Our Cause</a>
   </div>
-  {% image './src/images/cabinets2.jpg', 'kitchen cabinets', '', 'lazy',
-  '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920'%}
+  {% image
+  './src/assets/images/about-us/Adventure-TED-Color-Transparent-Logo.png',
+  'Support CCS', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px)
+  850px, 1920'%}
 </section>
