@@ -1,7 +1,7 @@
 ---
 layout: "base.html"
-description: "Meta description for the page"
-metaTitle: "Title that shows up on google searches"
+description: "Get in touch with the Childhood Cancer Society for support, information, or to join our cause."
+metaTitle: "Contact Childhood Cancer Society"
 tagTitle: "Contact"
 preloadImg: "/images/cabinets2-1920w.webp"
 preloadCSS: "/css/contact.css"
@@ -11,20 +11,14 @@ eleventyNavigation:
   order: 600
 ---
 
-<!-- Enter html code below -->
-
 <!-- ============================================ -->
 <!--                    LANDING                   -->
 <!-- ============================================ -->
 
 <section id="int-hero">
   <h1 id="home-h">Contact Us</h1>
-<<<<<<< HEAD
-  {% image './src/images/cabinets2.jpg', 'cabinets', '', 'lazy', '(max-width:
-  400px) 400px, (max-width: 850px) 850px, 1920px'%}
-=======
-  {% image './src/images/hero-desktop.png', 'hero image', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
->>>>>>> c848659b277d5dcfbd231d83dff386d3edb0f73c
+  {% image './src/assets/images/about-us/cropped-dis-logo3.png', 'Contact CCS',
+  '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
 </section>
 
 <!-- ============================================ -->
@@ -36,79 +30,72 @@ eleventyNavigation:
     <form id="cs-form" name="Contact Form" method="post">
       <div class="cs-content">
         <span class="cs-topper">Contact</span>
-        <h2 class="cs-title">Email Us:</h2>
+        <h2 class="cs-title">Get in Touch</h2>
         <p class="cs-text">
-          Explore the world of innovative design and unparalleled quality with
-          us. Our team's expertise transforms ordinary spaces into extraordinary
-          ones. Each project reflects our dedication to excellence, merging
-          creativity with functionality. Experience the difference with our
-          unique approach.
+          We're here to offer support and answer any questions you have. Reach
+          out to us for assistance or to learn more about how we make a
+          difference in the fight against pediatric cancer.
         </p>
       </div>
       <label>
-        Name
-        <input required type="text" id="name" name="name" placeholder="Name" />
-      </label>
-      <label>
-        Email
+        Your Name (required)
         <input
           required
           type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+        />
+      </label>
+      <label>
+        Your Email (required)
+        <input
+          required
+          type="email"
           id="email"
           name="email"
-          placeholder="Email"
+          placeholder="Your Email"
         />
       </label>
       <label>
-        Phone
+        Your Phone Number
         <input
-          required
-          type="text"
+          type="tel"
           id="phone"
           name="phone"
-          placeholder="Phone"
-        />
-      </label>
-      <label>
-        How Did You Find Us
-        <input
-          type="text"
-          id="find"
-          name="find-us"
-          placeholder="How did you find us?"
+          placeholder="Your Phone Number"
         />
       </label>
       <label class="cs-label-message">
-        Message
+        Your Message
         <textarea
           required
           name="Message"
           id="message"
-          placeholder="Write message..."
+          placeholder="Your Message..."
         ></textarea>
       </label>
       <button class="cs-button-solid" type="submit">Submit Message</button>
     </form>
     <div class="cs-right-section">
-<<<<<<< HEAD
       <!--Email-->
-      <span class="cs-header">Email</span>
-      <a class="cs-link" href="mailto:support@yourdomain.com"
-        >support@yourdomain.com</a
-      >
-      <!--Phone-->
-      <span class="cs-header">Phone</span>
-      <a class="cs-link" href="tel:219-555-1234">(219) 555-1234</a>
-      <!--Address-->
-      <span class="cs-header">Address</span>
-      <a class="cs-link" href=""
-        >2553 Woodbridge Lane, <span class="cs-block">Boston Ware 120</span></a
-      >
+      <span>Email Us</span>
+      <p class="cs-text">support@childhoodcancersociety.org</p>
 
-=======
->>>>>>> c848659b277d5dcfbd231d83dff386d3edb0f73c
+      <!--Phone-->
+      <span>Call Us</span>
+      <p class="cs-text">+1 (848) 200-2111</p>
+
+      <address>
+        Childhood Cancer Society<br />
+        P.O. Box 221<br />
+        189 Berdan Ave.<br />
+        Wayne, NJ 07470
+      </address>
+
       <!-- Background Image-->
-      {% image './src/images/ted-waving.png', 'building', '', 'lazy'%}
+      {% image './src/assets/images/about-us/cropped-dis-logo3.png', 'Childhood
+      Cancer Society Banner', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
     </div>
   </div>
 </section>
