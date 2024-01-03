@@ -1,0 +1,38 @@
+#adventure-ted-program {
+  margin: 120px 0;
+  padding: 20px;
+}
+
+#adventure-ted-program h1 {
+  text-align: center;
+  color: #a80265;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#adventure-ted-program ul {
+  padding-left: 40px;
+}
+
+.yt-video {
+  display: inline-block;
+  margin: 20px 0;
+  text-decoration: none;
+  color: white;
+  background: #007bff; /* Adjust the color as needed */
+}
+.app-div {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.app-button {
+  text-decoration: none;
+  color: white;
+  background-color: #8d6dc4; /* Adjust the background color as needed */
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+p {
+  margin: 5px 0;
+}
