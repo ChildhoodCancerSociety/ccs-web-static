@@ -1,6 +1,24 @@
+/* Global container styles */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Maximum width of the container */
+  margin: 0 auto; /* Centers the container and adds top and bottom margin */
+  padding: 40px;
+  box-sizing: border-box; /* Includes padding in the width */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px; /* Less padding on smaller screens */
+  }
+}
+
+/* Specific styles for teddygram-program section */
 #teddygram-program {
-  margin: 100px 0;
-  padding: 20px;
+  margin-top: 140px; /* Remove additional margin as it's handled by the container */
+  padding: 0;
 }
 
 #teddygram-program h1 {
@@ -17,5 +35,6 @@
 }
 
 .div-img {
+  text-align: center;
   margin: 10px 0;
 }
