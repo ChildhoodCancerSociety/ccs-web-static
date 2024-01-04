@@ -1,24 +1,38 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Global container styles */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Maximum width of the container */
+  margin: 20px auto; /* Centers the container */
+  padding: 40px;
+  box-sizing: border-box; /* Includes padding in the width */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px; /* Less padding on smaller screens */
+  }
+}
+
+/* Specific styles for volunteer opportunities section */
 #volunteer-opportunities {
-  margin: 70px 30px;
+  margin-top: 120px;
   padding: 20px;
 }
-a {
+
+#volunteer-opportunities a {
   text-decoration: none;
-  color: #861e7d;
+  color: #861e7d; /* Link color */
 }
 
 .centered-title {
   text-align: center;
   font-size: 2em;
-  color: #a80265;
+  color: #a80265; /* Title color */
   margin-bottom: 20px;
 }
+
 .centered-text {
   font-size: 18px;
   text-align: center;
@@ -26,12 +40,7 @@ a {
   margin-bottom: 20px;
 }
 
-.opportunity h2 {
-  color: #333;
-  font-size: 1.5em;
-}
-
-.center-link {
+#volunteer-opportunities .center-link {
   display: block;
   text-align: center;
   margin: 10px 0;
