@@ -1,13 +1,31 @@
+/* Global container styles */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Maximum width of the container */
+  margin: 0 auto; /* Centers the container and adds top and bottom margin */
+  padding: 40px;
+  box-sizing: border-box; /* Includes padding in the width */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px; /* Less padding on smaller screens */
+  }
+}
+
+/* Specific styles for adventure-ted-program section */
 #adventure-ted-program {
-  margin: 120px 0;
-  padding: 20px;
+  margin-top: 140px;
+  padding: 0;
 }
 
 #adventure-ted-program h1 {
   text-align: center;
-  color: #a80265;
   font-size: 2em;
   margin-bottom: 20px;
+  color: #a80265;
 }
 
 #adventure-ted-program ul {
@@ -15,12 +33,13 @@
 }
 
 .yt-video {
-  display: inline-block;
-  margin: 20px 0;
-  text-decoration: none;
-  color: white;
-  background: #007bff; /* Adjust the color as needed */
+  display: block; /* Corrected for block-level display */
+  width: 100%;
+  max-width: 560px; /* Maximum width of the video */
+  height: 315px;
+  margin: 20px auto; /* Centered horizontally */
 }
+
 .app-div {
   margin-top: 40px;
   text-align: center;
@@ -33,6 +52,7 @@
   padding: 10px 15px;
   border-radius: 5px;
 }
+
 p {
   margin: 5px 0;
 }
