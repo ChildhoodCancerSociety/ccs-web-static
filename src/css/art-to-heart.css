@@ -1,6 +1,21 @@
+.container {
+  width: 100%;
+  max-width: 1200px; /* Maximum width of the container */
+  margin: 0 auto; /* Centers the container */
+  padding: 40px;
+  box-sizing: border-box; /* Includes padding in the width */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+}
+
 #art-to-heart-campaign {
-  margin: 100px 0;
-  padding: 20px;
+  margin-top: 140px;
 }
 
 .centered-title {
@@ -9,6 +24,7 @@
   margin-bottom: 30px;
   color: #a80265;
 }
+
 .art-img {
   text-align: center;
   margin-bottom: 30px;
@@ -19,15 +35,15 @@
   height: auto;
 }
 
-#art-to-heart-campaign ol {
-  padding-left: 20px;
-}
 ul {
   list-style-type: none;
+  padding-left: 20px; /* Adjust as needed */
 }
+
 a {
   text-decoration: none;
 }
+
 p {
   margin: 5px 0;
 }
