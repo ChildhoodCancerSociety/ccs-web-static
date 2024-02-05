@@ -1,0 +1,21 @@
+#teddygram-program {
+  margin: 100px 0;
+  padding: 20px;
+}
+
+#teddygram-program h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #a80265;
+}
+
+#teddygram-program img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.div-img {
+  margin: 10px 0;
+}
