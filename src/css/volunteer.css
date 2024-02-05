@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#volunteer-opportunities {
+  margin: 70px 30px;
+  padding: 20px;
+}
+a {
+  text-decoration: none;
+  color: #861e7d;
+}
+
+.centered-title {
+  text-align: center;
+  font-size: 2em;
+  color: #a80265;
+  margin-bottom: 20px;
+}
+.centered-text {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.opportunity h2 {
+  color: #333;
+  font-size: 1.5em;
+}
+
+.center-link {
+  display: block;
+  text-align: center;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .centered-title {
+    font-size: 1.5em;
+  }
+}

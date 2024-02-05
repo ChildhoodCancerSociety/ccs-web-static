@@ -1,0 +1,43 @@
+.container {
+  width: 100%;
+  max-width: 1200px; /* Maximum width of the container */
+  margin: 0 auto; /* Centers the container */
+  padding: 20px;
+  box-sizing: border-box; /* Includes padding in the width */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px; /* Less padding on smaller screens */
+  }
+}
+
+#adventure-ted-scholars {
+  margin-top: 120px;
+  padding: 20px;
+}
+
+#adventure-ted-scholars h1 {
+  text-align: center;
+  color: #a80265;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#adventure-ted-scholars ul {
+  padding-left: 40px;
+  list-style-type: none;
+}
+
+#adventure-ted-scholars img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+p {
+  margin: 20px 0;
+}
+a {
+  text-decoration: none;
+}
