@@ -1,11 +1,9 @@
 @import url('./about.css');
-@import url('./blog.css');
 @import url('./contact.css');
 @import url('./critical.css');
 @import url('./local.css');
 @import url('./mobile-nav-options.css');
 @import url('./projects.css');
-@import url('./reviews.css');
 
 :root {
   --ccs-color-primary-base: #7C6492;
