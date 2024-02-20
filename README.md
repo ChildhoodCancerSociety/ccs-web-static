@@ -8,7 +8,6 @@
 - [How it Works](#how-it-works)
 - [Using the Kit](#using-the-kit)
 - [Converting a Static Site](#converting-a-static-site)
-- [Blog](#blog)
 - [Things to do before deployment](#pre-deployment-things)
 
 # Overview
