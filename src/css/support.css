@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#support {
+  margin: 100px 30px;
+  padding: 20px;
+  background-color: #f0f0f0; /* Light grey background for the support section */
+}
+
+.support-title {
+  text-align: center;
+  font-size: 2em;
+  color: #a80265; /* Deep pink */
+  margin-bottom: 40px;
+}
+
+.support-text {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.support-item {
+  color: #333;
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#support-link {
+  display: inline-block; /* Makes the link align properly */
+  color: #861e7d; /* Dark purple */
+  text-decoration: none; /* Removes underline */
+  margin-top: 10px; /* Adds space above the link */
+  font-weight: bold; /* Makes the link text bold */
+}
+
+.support-link:hover {
+  text-decoration: underline; /* Adds underline on hover for better user interaction */
+}
+
+@media screen and (max-width: 768px) {
+  .support-title {
+    font-size: 1.5em; /* Smaller font size on smaller screens */
+  }
+
+  .support-text {
+    font-size: 16px; /* Smaller font size for the text */
+  }
+
+  #support {
+    margin: 100;
+  }
+}
