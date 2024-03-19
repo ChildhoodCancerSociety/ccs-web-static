@@ -1,17 +1,17 @@
-@import url('./root.css');
+@import url("./root.css");
 
 :root {
-  --ccs-color-primary-base: #7C6492;
+  --ccs-color-primary-base: #7c6492;
   --ccs-color-primary-darker: #452264;
-  --ccs-color-primary-lighter: #C7BCD0;
-  --ccs-color-secondary-base: #6FCA72;
-  --ccs-color-secondary-darker: #4A984E;
-  --ccs-color-secondary-lighter: #B0EDB3;
+  --ccs-color-primary-lighter: #c7bcd0;
+  --ccs-color-secondary-base: #6fca72;
+  --ccs-color-secondary-darker: #4a984e;
+  --ccs-color-secondary-lighter: #b0edb3;
 
-  --ccs-color-neutral-black: #25282B;
-  --ccs-color-neutral-dark-gray: #52575C;
-  --ccs-color-neutral-light-gray: #F9F9FA;
-  --ccs-color-neutral-white: #FFFFFF;
+  --ccs-color-neutral-black: #25282b;
+  --ccs-color-neutral-dark-gray: #52575c;
+  --ccs-color-neutral-light-gray: #f9f9fa;
+  --ccs-color-neutral-white: #ffffff;
 }
 
 /*-- -------------------------- -->
@@ -29,7 +29,7 @@
     --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
   }
   #cs-contact {
-    font-family: 'Roboto', 'Arial', sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     padding: var(--sectionPadding);
   }
   #cs-contact .cs-container {
@@ -46,7 +46,7 @@
     line-height: 1.2em;
     text-transform: uppercase;
     text-align: left;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
     font-weight: 700;
     color: var(--ccs-color-secondary-base);
     /* 8px - 12px */
@@ -101,11 +101,11 @@
     height: 4rem;
     margin-top: 0.25rem;
     padding-left: 1.25rem;
-    border: 1px solid #B4B2C7;
+    border: 1px solid #b4b2c7;
     border-radius: 0.5rem;
     /* prevents border & padding from affecting height */
     box-sizing: border-box;
-    transition: border .3s;
+    transition: border 0.3s;
     max-width: 100%;
   }
   #cs-contact #cs-form input:hover,
@@ -140,7 +140,7 @@
     box-sizing: border-box;
   }
   #cs-contact .cs-button-solid:before {
-    content: '';
+    content: "";
     position: absolute;
     height: 100%;
     width: 0%;
@@ -150,7 +150,7 @@
     left: 0;
     z-index: -1;
     border-radius: 0.25rem;
-    transition: width .3s;
+    transition: width 0.3s;
   }
   #cs-contact .cs-button-solid:hover {
     color: var(--bodyTextColorWhite);
@@ -179,7 +179,7 @@
     line-height: 1.2em;
     font-weight: 700;
     margin-bottom: 0.5rem;
-    color: var(--bodyTextColorWhite);
+    color: #1a1a1a;
     display: block;
   }
   #cs-contact .cs-link {
@@ -188,13 +188,13 @@
     line-height: 1.2em;
     text-decoration: none;
     margin-bottom: 1.25rem;
-    color: var(--bodyTextColorWhite);
+    color: #25282b;
     display: block;
     position: relative;
   }
   #cs-contact .cs-link:before {
     /* Animated underline */
-    content: '';
+    content: "";
     width: 0%;
     height: 2px;
     /* current color of the parent */
@@ -204,7 +204,7 @@
     display: block;
     bottom: -0.125rem;
     left: 0;
-    transition: width .3s;
+    transition: width 0.3s;
   }
   #cs-contact .cs-link:hover:before {
     width: 100%;
@@ -224,16 +224,20 @@
     top: 0;
     left: 0;
     z-index: -1;
-    transition: transform .6s;
+    transition: transform 0.6s;
   }
   #cs-contact .cs-bg-picture:before {
     /* background color overlay */
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     height: 100%;
     width: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
     top: 0;
     left: 0;
     z-index: 1;
@@ -297,6 +301,9 @@
   #cs-contact .cs-block {
     /* goes back to inline so it stays "in line" with the rest of the text */
     display: inline-block;
+  }
+  #cs-contact .cs-right-section img {
+    margin-top: 2rem; /* Adds space below the image */
   }
 }
 /* Small Desktop - 1300px */
